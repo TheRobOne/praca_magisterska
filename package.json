@@ -1,0 +1,34 @@
+{
+  "name": "reporting_failures_app",
+  "version": "1.0.0",
+  "description": "Simple app for reporting equipment failures in the rooms at the Cracow University of Technology",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobOne/reporting_failures_app.git"
+  },
+  "author": "Maciej Rusek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRobOne/reporting_failures_app/issues"
+  },
+  "homepage": "https://github.com/TheRobOne/reporting_failures_app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.11",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "validator": "^10.3.0"
+  }
+}

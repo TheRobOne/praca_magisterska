@@ -1,0 +1,10 @@
+.logo-container {
+    margin-top: 10px;
+    text-align: left;
+    background: #fff !important;
+}
+
+.logo {
+    margin-left: 10px;
+    cursor: pointer;
+}

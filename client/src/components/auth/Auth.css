@@ -1,0 +1,6 @@
+.submit:hover {
+    background-color: #ddd !important;
+    border-color: #ddd !important;
+    color: black !important;
+    text-decoration: none;
+}

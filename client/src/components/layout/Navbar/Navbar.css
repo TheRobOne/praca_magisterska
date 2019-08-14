@@ -1,0 +1,44 @@
+.navbar {
+    background: #941c2f !important;
+}
+
+.topnav {
+    padding: 0rem 0rem !important;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+}
+
+.topnav a{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    height: 100%;
+}
+
+.topnav a:hover {
+    text-decoration: none;
+    background: #07356b;
+}
+
+.nav-link {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.navbar-collapse {
+    padding-left: 15px;
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-left {
+        padding-left: 20% !important;
+    }
+}
+
+.nav-right {
+    padding-right: 380px; 
+}

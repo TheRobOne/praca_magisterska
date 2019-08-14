@@ -1,0 +1,33 @@
+.new-failure-form {
+    float: center;
+    padding: 20px;
+    max-width:500px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px dashed #607D8B;
+}
+
+.new-failure-form .row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new-failure-form .submit {
+    background-color: #009688;
+    color: white;
+    border: none;
+}
+
+.new-failure-form:hover .submit:hover {
+    background-color: #ddd !important;
+    color: black;
+    text-decoration: none;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    padding-top: 6px;
+}
