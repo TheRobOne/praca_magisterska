@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 //cors middleware
 app.use(cors());
 
-app.use(express.static(path.join(__dirname, "client", "build")))
+app.use(express.static(path.join(__dirname, "/client/build")))
 
 //route files
 const buildings = require('./routes/building');
@@ -35,7 +35,7 @@ app.use('/users', users);
 const port = process.env.PORT || 5000;
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
 
 
