@@ -9,6 +9,14 @@ module.exports = function validateRegisterInput(data) {
   data.password = !isEmpty(data.password) ? data.password : '';
   data.password2 = !isEmpty(data.password2) ? data.password2 : '';
 
+  if (!data.email.includes("pk.edu.pl")) {
+    errors.email = 'Adres email musi pochodzić z domeny Politechniki Krakowskiej';
+  }
+
+  if (data.email.includes("student.pk.edu.pl")) {
+    errors.email = 'Adres email nie może być adresem studenckim';
+  }
+
   if (!Validator.isLength(data.name, { min: 2, max: 30 })) {
     errors.name = 'Imię i nazwisko musi zawierać się w przedziale od 2 do 30 znaków';
   }
