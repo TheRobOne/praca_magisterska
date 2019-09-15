@@ -56,7 +56,7 @@ class FailurePage extends Component {
             title: this.state.title,
             description: this.state.description
         }
-
+    
         this.props.updateFailure(failureId, updatedFailure, this.props.history);
     }
 
@@ -68,7 +68,9 @@ class FailurePage extends Component {
     onChangeSelectedBuilding(event) {
         event.preventDefault();
         const currentBuilding = this.state.buildings.filter(building => building.name === event.target.value);
-        this.setState({currentBuilding: currentBuilding[0].name, rooms: currentBuilding[0].rooms, currentRoom: currentBuilding[0].rooms[0].number});
+        console.log(currentBuilding);
+        this.setState({currentBuilding: currentBuilding[0].name, rooms: currentBuilding[0].rooms, currentRoom: currentBuilding[0].rooms[0].number},
+            console.log(this.state));
     }
 
     onChangeSelectedRoom(event) {
@@ -104,7 +106,7 @@ class FailurePage extends Component {
         )
     
         const roomsList = this.state.rooms.map(room => 
-          <option key={room.number}>{room.number}</option>
+          <option key={room}>{room}</option>
         )
 
         return (

@@ -26,8 +26,8 @@ class NewFailure extends Component {
   componentDidMount() {
     axios.get('/buildings/')
     .then(res => {
-      console.log(res.data[0]);
-      this.setState({buildings: res.data, currentBuilding: res.data[0].name, rooms: res.data[0].rooms, currentRoom: res.data[0].rooms[0].number})
+      //console.log(res.data[0].rooms[0]);
+      this.setState({buildings: res.data, currentBuilding: res.data[0].name, rooms: res.data[0].rooms, currentRoom: res.data[0].rooms[0]})
     })
   }
   
